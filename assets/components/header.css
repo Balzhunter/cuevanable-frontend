@@ -34,6 +34,8 @@
 .navbar__list-item i {
   content: "\f078";
   font-size: 0.65rem;
+  color: #007aff;
+  font-weight: 700;
 }
 
 .navbar__list-item a {
@@ -113,7 +115,7 @@
 
 .header__login .link--primary {
   background-color: #007aff;
-  padding: 0.25rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 3rem;
 }
 
