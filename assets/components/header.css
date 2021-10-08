@@ -9,7 +9,6 @@
 }
 
 .header--layout {
-  border: 1px solid;
   display: grid;
   grid-template-columns: 300px auto;
   align-items: center;
@@ -23,7 +22,6 @@
 .header__navbar .navbar__list {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  border: 1px solid;
 }
 
 .navbar__list-item {
@@ -37,6 +35,53 @@
 
 .navbar__list-item.active {
   font-weight: 700;
+}
+
+.h-search .header__form {
+  height: 100%;
+  align-items: center;
+  display: grid;
+}
+
+.h-search .header__form .form__control {
+  display: grid;
+  align-items: center;
+}
+
+.h-search .header__form .form__control input {
+  border: 1px solid rgba(61, 79, 145, 0.5);
+  background-color: rgba(8, 15, 40, 0.5);
+  color: inherit;
+  padding: 0.5rem 1.7rem 0.5rem 1rem;
+  border-radius: 2rem;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 14px;
+}
+
+.h-search .header__form .form__control input::placeholder {
+  font-size: 14px;
+  background-color: rgba(8, 15, 40, 0.5);
+  color: inherit;
+}
+
+.h-search .header__form .form__control input:focus {
+  border: 1px solid #3d4f91;
+}
+
+.h-search .header__form .form__control a {
+  text-align: center;
+  position: absolute;
+  right: 12px;
+  color: #007aff;
+}
+
+.h-search .input--search {
+  font: 400 1rem/1.5625rem sans-serif;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  position: relative;
 }
 
 @media (max-width: 1268px) {
