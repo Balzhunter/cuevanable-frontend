@@ -31,6 +31,17 @@
   padding: 0.5rem 0;
 }
 
+.navbar__list-item i {
+  content: "\f078";
+  font-size: 0.65rem;
+}
+
+.navbar__list-item a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 .navbar__list-item a:hover {
   color: #007aff;
 }
@@ -63,7 +74,7 @@
   height: 100%;
   outline: none;
   font-size: 14px;
-  transition: 300ms;
+  transition: 200ms;
 }
 
 .h-search .header__form .form__control input::placeholder {
@@ -75,7 +86,7 @@
 .h-search .header__form .form__control input:focus {
   border: 1px solid #3d4f91;
   width: 15.5rem;
-  transition: 300ms;
+  transition: 200ms;
 }
 
 .h-search .header__form .form__control a {
@@ -108,7 +119,7 @@
 
 .header__login .link--primary:hover,
 .header__login .link:hover {
-  animation: zoom 300ms ease-in;
+  animation: zoom 200ms ease-in;
   transition: 0.2s;
 }
 
