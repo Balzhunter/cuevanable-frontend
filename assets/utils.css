@@ -1,7 +1,6 @@
 .mx__container {
   max-width: 1540px;
   margin: auto;
-  border: 1px solid;
 }
 
 @media (max-width: 1268px) {

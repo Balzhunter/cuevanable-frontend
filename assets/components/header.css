@@ -2,6 +2,8 @@
   position: relative;
   top: 0;
   z-index: 11;
+  height: 108px;
+  display: grid;
 }
 
 .header-logo {
@@ -16,7 +18,7 @@
 
 .header__content {
   display: grid;
-  grid-template-columns: 500px 204px auto;
+  grid-template-columns: 500px 284px auto;
 }
 
 .header__navbar .navbar__list {
@@ -46,6 +48,9 @@
 .h-search .header__form .form__control {
   display: grid;
   align-items: center;
+  position: relative;
+  z-index: 1px;
+  justify-items: end;
 }
 
 .h-search .header__form .form__control input {
@@ -54,10 +59,11 @@
   color: inherit;
   padding: 0.5rem 1.7rem 0.5rem 1rem;
   border-radius: 2rem;
-  width: 100%;
+  width: 80%;
   height: 100%;
   outline: none;
   font-size: 14px;
+  transition: 300ms;
 }
 
 .h-search .header__form .form__control input::placeholder {
@@ -68,6 +74,8 @@
 
 .h-search .header__form .form__control input:focus {
   border: 1px solid #3d4f91;
+  width: 15.5rem;
+  transition: 300ms;
 }
 
 .h-search .header__form .form__control a {
@@ -82,6 +90,26 @@
   overflow-x: hidden;
   word-wrap: break-word;
   position: relative;
+}
+
+.header__login {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(2, 93px);
+  text-align: center;
+  align-items: center;
+}
+
+.header__login .link--primary {
+  background-color: #007aff;
+  padding: 0.25rem 1rem;
+  border-radius: 3rem;
+}
+
+.header__login .link--primary:hover,
+.header__login .link:hover {
+  animation: zoom 300ms ease-in;
+  transition: 0.2s;
 }
 
 @media (max-width: 1268px) {
