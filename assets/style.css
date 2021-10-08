@@ -1,2 +1,26 @@
 @import url("./global.css");
 @import url("./components/header.css");
+@import url("./utils.css");
+/* reset */
+*,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Main Style */
+body {
+  background-color: #080f28;
+  color: #8da0bc;
+  font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen,
+    Ubuntu, Cantarell, open sans, helvetica neue, sans-serif;
+}
