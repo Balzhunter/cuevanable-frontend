@@ -1,0 +1,132 @@
+.header {
+  position: relative;
+  top: 0;
+  z-index: 11;
+  height: 108px;
+  display: grid;
+}
+
+.header-logo {
+  text-align: center;
+}
+
+.header--layout {
+  display: grid;
+  grid-template-columns: 300px auto;
+  align-items: center;
+}
+
+.header__content {
+  display: grid;
+  grid-template-columns: 500px 284px auto;
+}
+
+.header__navbar .navbar__list {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
+.navbar__list-item {
+  display: inline-block;
+  padding: 0.5rem 0;
+}
+
+.navbar__list-item i {
+  content: "\f078";
+  font-size: 0.65rem;
+  color: #007aff;
+  font-weight: 700;
+}
+
+.navbar__list-item a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.navbar__list-item a:hover {
+  color: #007aff;
+}
+
+.navbar__list-item.active {
+  font-weight: 700;
+}
+
+.h-search .header__form {
+  height: 100%;
+  align-items: center;
+  display: grid;
+}
+
+.h-search .header__form .form__control {
+  display: grid;
+  align-items: center;
+  position: relative;
+  z-index: 1px;
+  justify-items: end;
+}
+
+.h-search .header__form .form__control input {
+  border: 1px solid rgba(61, 79, 145, 0.5);
+  background-color: rgba(8, 15, 40, 0.5);
+  color: inherit;
+  padding: 0.5rem 1.7rem 0.5rem 1rem;
+  border-radius: 2rem;
+  width: 80%;
+  height: 100%;
+  outline: none;
+  font-size: 14px;
+  transition: 200ms;
+}
+
+.h-search .header__form .form__control input::placeholder {
+  font-size: 14px;
+  background-color: rgba(8, 15, 40, 0.5);
+  color: inherit;
+}
+
+.h-search .header__form .form__control input:focus {
+  border: 1px solid #3d4f91;
+  width: 15.5rem;
+  transition: 200ms;
+}
+
+.h-search .header__form .form__control a {
+  text-align: center;
+  position: absolute;
+  right: 12px;
+  color: #007aff;
+}
+
+.h-search .input--search {
+  font: 400 1rem/1.5625rem sans-serif;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  position: relative;
+}
+
+.header__login {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(2, 93px);
+  text-align: center;
+  align-items: center;
+}
+
+.header__login .link--primary {
+  background-color: #007aff;
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+}
+
+.header__login .link--primary:hover,
+.header__login .link:hover {
+  animation: zoom 200ms ease-in;
+  transition: 0.2s;
+}
+
+@media (max-width: 1268px) {
+  .header__content {
+    grid-template-columns: 450px 184px auto;
+  }
+}

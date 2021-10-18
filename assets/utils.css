@@ -1,0 +1,10 @@
+.mx__container {
+  max-width: 1540px;
+  margin: auto;
+}
+
+@media (max-width: 1268px) {
+  .mx__container {
+    max-width: 1140px;
+  }
+}
